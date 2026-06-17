@@ -217,6 +217,10 @@ p {
   padding: 76px 20px;
 }
 
+.treatments-section {
+  background: var(--white);
+}
+
 .section.alt {
   background: #fff5f1;
   color: var(--ink);
@@ -251,7 +255,7 @@ p {
 }
 
 .card {
-  background: var(--white);
+  background: #fff;
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
