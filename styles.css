@@ -427,16 +427,34 @@ p {
 }
 
 @media (max-width: 820px) {
-  .nav,
-  .nav-links,
+  :root {
+    --expanded-nav-height: calc(min(110px, 31vw) + 60px);
+  }
+
   .callout-inner,
   .footer-inner {
     align-items: flex-start;
     flex-direction: column;
   }
 
+  .nav {
+    text-align: center;
+  }
+
   .nav-links {
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 12px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-callout {
+    align-items: center;
+  }
+
+  .footer-callout .button {
+    align-self: center;
   }
 
   .section-heading,
