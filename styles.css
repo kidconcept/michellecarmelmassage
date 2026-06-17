@@ -10,6 +10,7 @@
   --white: #f7f5ea;
   --shadow: 0 16px 36px rgba(4, 16, 35, 0.08);
   --compact-nav-height: 56px;
+  --expanded-nav-height: 164px;
 }
 
 * {
@@ -321,6 +322,9 @@ p {
 .footer {
   background: #041023;
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100svh - var(--expanded-nav-height));
   padding: 36px 20px;
 }
 
@@ -328,9 +332,17 @@ p {
   align-items: center;
   border-bottom: 1px solid rgba(247, 245, 234, 0.24);
   flex-direction: column;
-  margin-bottom: 36px;
-  padding-bottom: 42px;
+  flex: 1;
+  gap: 44px;
+  margin-bottom: 54px;
+  padding: 54px 0 72px;
   text-align: center;
+  justify-content: center;
+}
+
+.footer-callout > div {
+  display: grid;
+  gap: 28px;
 }
 
 .footer-callout .eyebrow {
@@ -339,6 +351,7 @@ p {
 
 .footer-callout h2 {
   font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1.18;
 }
 
 .footer-inner {
