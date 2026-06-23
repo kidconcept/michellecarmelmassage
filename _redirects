@@ -1,9 +1,11 @@
 /index.html /
 /about.html /about/
-/essential-massage.html /essential-massage/
-/therapeutic-treatment.html /therapeutic-treatment/
+/essential-massage.html /full-body-transformation/ 301!
+/essential-massage/ /full-body-transformation/ 301!
+/therapeutic-treatment.html /full-body-transformation/ 301!
+/therapeutic-treatment/ /full-body-transformation/ 301!
 /full-body-transformation.html /full-body-transformation/
-/signature-massage.html /therapeutic-treatment/
-/signature-massage/ /therapeutic-treatment/
+/signature-massage.html /full-body-transformation/ 301!
+/signature-massage/ /full-body-transformation/ 301!
 /carmel-reset-ritual.html /full-body-transformation/
 /carmel-reset-ritual/ /full-body-transformation/

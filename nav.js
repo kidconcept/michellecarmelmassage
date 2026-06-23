@@ -14,3 +14,17 @@
   window.addEventListener("scroll", updateLogo, { passive: true });
   window.addEventListener("resize", updateLogo);
 })();
+
+(() => {
+  const slider = document.querySelector("[data-price-slider]");
+  const output = document.querySelector("[data-price-output]");
+
+  if (!slider || !output) return;
+
+  const updatePrice = () => {
+    output.textContent = `$${slider.value}`;
+  };
+
+  updatePrice();
+  slider.addEventListener("input", updatePrice);
+})();
